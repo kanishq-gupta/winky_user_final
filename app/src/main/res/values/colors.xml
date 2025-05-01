@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="theme">#22BBA2</color>
+    <color name="text_theme">#22BBA2</color>
+    <color name="signin">#ACACAC</color>
+    <color name="signintheme">#FFFFFF</color>
+    <color name="actualwhite">#FFFFFF</color>
+
+</resources>
