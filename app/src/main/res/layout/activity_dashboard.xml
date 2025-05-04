@@ -282,18 +282,141 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/bottom_nav"
-        android:layout_width="413dp"
+        android:layout_width="0dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="4dp"
         android:background="@color/white"
-        android:gravity="center"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent">
 
-    </LinearLayout>
+        <!-- Blurry Line at the Top -->
+        <View
+            android:id="@+id/blurLine"
+            android:layout_width="0dp"
+            android:layout_height="6dp"
+            android:background="@drawable/blur_line"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Home Item -->
+        <!-- Home Item -->
+        <LinearLayout
+            android:id="@+id/home_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/blurLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/cart_item">
+
+            <ImageView
+                android:id="@+id/home_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/home_icon"
+                android:contentDescription="Home Icon"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- Cart Item -->
+        <LinearLayout
+            android:id="@+id/cart_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/blurLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/home_item"
+            app:layout_constraintEnd_toStartOf="@id/orders_item">
+
+            <ImageView
+                android:id="@+id/cart_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/cart_icon"
+                android:contentDescription="Cart Icon"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- Orders Item -->
+        <LinearLayout
+            android:id="@+id/orders_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/blurLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cart_item"
+            app:layout_constraintEnd_toStartOf="@id/profile_item">
+
+            <ImageView
+                android:id="@+id/orders_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/orders_icon"
+                android:contentDescription="Orders Icon"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Orders"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+
+        <!-- Profile Item -->
+        <LinearLayout
+            android:id="@+id/profile_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/blurLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/orders_item"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/profile_icon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/profile_icon"
+                android:contentDescription="Profile Icon"
+                android:clickable="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_regular" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
