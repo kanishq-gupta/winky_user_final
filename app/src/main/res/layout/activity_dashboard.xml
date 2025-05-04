@@ -316,11 +316,10 @@
 
             <ImageView
                 android:id="@+id/home_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/home_icon"
-                android:contentDescription="Home Icon"
-                android:clickable="true" />
+                android:contentDescription="Home Icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -345,11 +344,10 @@
 
             <ImageView
                 android:id="@+id/cart_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/cart_icon"
-                android:contentDescription="Cart Icon"
-                android:clickable="true" />
+                android:contentDescription="Cart Icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -374,11 +372,10 @@
 
             <ImageView
                 android:id="@+id/orders_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/orders_icon"
-                android:contentDescription="Orders Icon"
-                android:clickable="true" />
+                android:contentDescription="Orders Icon" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -403,11 +400,10 @@
 
             <ImageView
                 android:id="@+id/profile_icon"
-                android:layout_width="28dp"
-                android:layout_height="28dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/profile_icon"
-                android:contentDescription="Profile Icon"
-                android:clickable="true" />
+                android:contentDescription="Profile Icon" />
 
             <TextView
                 android:layout_width="wrap_content"
